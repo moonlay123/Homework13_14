@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="Лучший мессенжер в мире"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/purple_500"
+        />
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:hint="Ваша почта"
+        android:textColorHint="@color/purple_500"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/logpassdis"
+        android:drawableStart="@drawable/papa"
+        android:paddingLeft="15dp"
+        android:drawablePadding="10dp"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:textColorHint="@color/purple_500"
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:hint="Ваш пароль"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:inputType="textPassword"
+        android:background="@drawable/logpassdis"
+        android:drawableStart="@drawable/images"
+        android:paddingLeft="15dp"
+        android:drawablePadding="10dp"
+        />
+    <TextView
+        android:textColor="@color/red"
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Войти"
+        />
+</RelativeLayout>
